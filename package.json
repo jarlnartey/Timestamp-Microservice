@@ -1,0 +1,27 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarlnartey/timestamp-microservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarlnartey/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/jarlnartey/timestamp-microservice#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "node": "^16.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
