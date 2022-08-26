@@ -5,6 +5,16 @@ const port = 3000
 app.get("/api/:date?", (req, res) => {
     let date = req.params.date
 
+    // If no input, return current time
+    if (!date) {
+        let date = new Date()
+        console.log(date)
+
+        const unix = date.getTime()
+        let timeStamps = { "unix": unix, "utc": date.toUTCString() }
+        return res.send(timeStamps)
+    }
+
     //Check if date format, else it is unix format
     if (date.includes("-")) {
 
