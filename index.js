@@ -8,7 +8,6 @@ app.get("/api/:date?", (req, res) => {
     // If no input, return current time
     if (!date) {
         let date = new Date()
-        console.log(date)
 
         const unix = date.getTime()
         let timeStamps = { "unix": unix, "utc": date.toUTCString() }
